@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body class="body">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img class="logo" src="img/logo.jpg" alt="logo">
+              <a class="navbar-brand" href="#">Darth Vader</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Descubre mas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#history">Historia</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Creado Por</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="tienda.html">Tienda Online</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success "  type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <img src="img/fondo.jpg" alt="fondobanner" class="w-100 img-fluid">
+        <section>
+            <div class="conteiner mt-5">
+                <div class="row">
+                    <div class="col-8 align-self-center">
+                        <h4 class="titulo text-center"  >Darth Vader Lord Sith</h4>
+                        <p class="conteiner-main text-center">Una vez que fue un heroico Caballero Jedi, Darth Vader fue seducido por el lado oscuro de la Fuerza, se convirtió en un Lord Sith y lideró la erradicación de la Orden Jedi por parte del Imperio.
+                        Permaneció al servicio del Emperador, el malvado Darth Sidious, durante décadas, haciendo cumplir la voluntad de su Maestro y tratando de aplastar a la incipiente Alianza Rebelde. Pero todavía había algo bueno en él...</p>
+                        <img src="http://images6.fanpop.com/image/photos/39700000/Darth-Vader-star-wars-39720166-540-200.gif" alt="git" class=" main-gif img-fluid" >
+                    </div>
+                    <div class="col-4">
+                        <img src="img/imagen1.jpg" alt="foto" class="w-100 h-70 img-fluid" id="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <section>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <img src="img/imagenPerfil.jpg" alt="perfil" class="img-perfil">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Luis Fernando</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Mi nombre es Luis Fernando Sucerquia Armesto, soy estudiante de la institucion CESDE-Educacion para el Trabajo
+                y Desarrollo Humano, estoy cursando la carrera Tecnico Labol como Aistente en Desarrollo de Sotware, cuento con 
+                dos semestres de educacion y actualmente realizo el tercero.Me apaciona desde joven todo el tema de desarrollo de
+                sotware, no cuento con experiencia laboral pero tengo toda la actitud para emprender nuevos desafios...
+              </div>
+              <div class="dropdown mt-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Contact
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#" target="_black"><i class="fa-brands fa-github"> github:fernan03</i></a></li>
+                  <li><a class="dropdown-item" href="https://msng.link/o/?luis fernando sucerquia=fm" target="_black"><i class="fa-brands fa-facebook"> facebook</i></a></li>
+                  <li><a class="dropdown-item" href="https://wa.link/cnij85" target="_blank"><i class="fa-brands fa-whatsapp"> whatsapp</i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+     
+    <section class="history" id="history">
+        <div class="conteiner-history">
+          <h2 class="title2 text-center " id="titulo">Anakin skywalker/Darth Vader</h2>
+            <p>Skywalker nació en el año 41 ABY antes de mudarse al planeta Tatooine del Borde Exterior durante la Era de la República. Aunque tenía una madre, la esclava Shmi Skywalker, la verdad sobre su linaje era que Anakin no tenía padre, lo que llevó al Maestro Jedi Qui-Gon Jinn a sospechar que la concepción de Skywalker era obra de los midiclorianos. Al reconocer la conexión sin precedentes del niño con la Fuerza, Jinn estaba decidido a ver a Skywalker entrenado como miembro de la Orden Jedi, cuya tarea finalmente recayó en su Padawan Obi-Wan Kenobi después de la muerte de Jinn en el 32 ABY. </p>
+
+            <p> Durante la siguiente década, Skywalker se convirtió en uno de los Jedi más fuertes en la historia galáctica. Si bien era a la vez cariñoso y compasivo, su miedo a la pérdida fue en última instancia el catalizador de su caída. A lo largo de la guerra, Skywalker entrenó a una padawan, Ahsoka Tano, quien finalmente abandonó la Orden Jedi después de que fuera acusada por el ataque terrorista en el Templo Jedi. La pérdida de Tano afectó a Skywalker a nivel personal, haciendo que se sintiera más aislado y amargado hacia el Alto Consejo Jedi. Con las Guerras Clon llegando a su fin, Skywalker sucumbió a las tentaciones del lado oscuro, creyendo que los Sith tenían el poder de salvar la vida de la senadora Padmé Amidala, su esposa secreta. Bautizado como «Darth Vader» por su nuevo maestro Darth Sidious, el recién creado Lord Sith asaltó el Templo Jedi de Coruscant, matando a Jedi completamente entrenado y jóvenes novatos por igual.</p>
+            <div class="slider">
+              <ul>
+               <li>
+                 <img src="img/imagenSlinder3.jpg" alt="imagen-slider">
+               </li>
+               <li>
+                 <img src="img/imagenSlinder1.jpg" alt="imagen-slider">
+               </li>
+               <li>
+                 <img src="img/imagenSlinder2.jpg" alt="imagen-slider">
+               </li>
+               <li>
+                 <img src="img/imagenSlinder4.jpg" alt="imagen-slider">
+               </li>
+              </ul>
+            </div>
+
+            <p> Después de asesinar a los líderes de la Confederación de Sistemas Independientes, Vader fue confrontado en Mustafar por su antiguo amigo y mentor, Kenobi, lo que resultó en un duelo con sables de luz que dejó a Vader quemado y mutilado. Como consecuencia de su derrota, fue reconstruido como un cíborg y encerrado en una armadura de soporte vital, distanciando aún más la personalidad de Vader de la de Anakin Skywalker. Además, la muerte de Amidala en el parto rompió el corazón del caído Caballero Jedi, dejándolo más máquina que hombre tanto mental como físicamente. </p>
+
+           <p> A lo largo de los Días Oscuros, el antiguo Anakin Skywalker llevó miedo a la galaxia en su calidad de ejecutor oscuro del Emperador. Sin embargo, a pesar de su profunda inmersión en la oscuridad, Vader nunca logró matar completamente al lado de sí mismo que era Skywalker. Su confrontación con su hijo, el aspirante a Caballero Jedi Luke Skywalker, durante la Guerra Civil Galáctica despertó la compasión dentro del Lord Sith, haciendo que Vader renunciara a su lealtad a los Sith para salvar a Luke de la ira del Emperador. Sin embargo, al matar a su maestro, Vader sufrió daños críticos en su armadura, haciendo inevitable su muerte. Resignado a su destino, su último deseo era ver a su hijo con sus propios ojos por primera y última vez. Al final, murió no como Darth Vader sino como Anakin Skywalker, el Elegido que dio equilibrio a la Fuerza al destruir a los Sith. Al cumplir su destino, la conciencia de Skywalker pudo soportar más allá de la muerte debido a su sacrificio y redención, lo que le permitió vivir en espíritu junto a sus mentores Jedi fallecidos, Obi-Wan Kenobi y el Gran Maestro Yoda. </p>
+
+            <p> Décadas después de la Batalla de Endor, los pasos de Anakin fueron seguidos por Ben Solo, su nieto, hijo de la Princesa Leia Organa y el contrabandista Han Solo. Ben cayó al lado oscuro y tomó la identidad de Kylo Ren bajo la influencia del Líder Supremo Snoke, creyendo que era su destino completar el legado de Vader y aniquilar a la Orden Jedi. Sin embargo, Kylo Ren finalmente fue redimido, convirtiéndose en Ben Solo nuevamente y ayudando a Rey a destruir al resucitado Darth Sidious de una vez por todas antes de sacrificarse para salvarla. 
+            </p>
+        </div>
+    </section>
+  <div class="row md-4">
+    <div class="col-md-4">
+      <div class="card " style="width: 18rem;">
+        <img src="img/imagen3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">¿La fuerza lo creó?</h5>
+          <p class="card-text">Cuando conocimos al pequeño Anakin ( Jake Lloyd) en La Amenaza Fantasma, su madre dio como explicación que el niño había nacido sin necesidad de un hombre. Qui-Gon ( Liam Neeson) pone sobre la mesa la teoría de que podría haber sido creado por la Fuerza, y eso explica su increíble poder.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="img/imagen4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">anakin skywalker y padme amidala</h5>
+          <p class="card-text">La boda de Anakin Skywalker y Padmé Amidala tomó lugar en una ceremonia secreta en el 22 ABY, en el retiro del lago de Varykino en Naboo. El Pontífice Maxiron Agolerga de la Hermandad del Conocimiento ofició la ceremonia. Los únicos testigos de la boda fueron R2-D2 y C-3PO.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="img/imagen2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Fue capaz de volver a la Luz y derrotar a los Sith</h5>
+          <p class="card-text">Gracias al amor de su hijo Luke, pudo finalmente superar años de rabia y del lado oscuro, volviendo a la luz y acabando con la amenaza del Emperador Palpatine. Esta fue su mayor hazaña y demostró lo grandioso que era el Jedi Anakin Skywalker: fue capaz de superar la oscuridad y devolver el equilibrio a la Fuerza.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <style>
+      a{ color:black}
+      p{color: white;}
+      h2{color: white;}
+    </style>
+   <a href="http://disneytermsofuse.com/">TM & © Lucasfilm Ltd. Todos los derechos reservados</a> <br>
+   <a href="http://disney.go.com/guestservices/legalnotices?ppLink=pp_wdig">Additional Content Information</a></li>
+   <a href="http://disneyprivacycenter.com/">Privacy Policy</a> <br>
+   <a href="https://disneyprivacycenter.com/kids-privacy-policy/english/">Children’s Online Privacy Policy</a>
+  
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/eventos.js"></script>
+    
+</body>
+</html>
+
