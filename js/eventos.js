@@ -55,3 +55,4 @@ function cambiartitulo(){
     let etiquetaTitulo2=document.getElementById("img")
     etiquetaTitulo2.textContent="Historia"
 }
+
