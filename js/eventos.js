@@ -32,12 +32,13 @@ productos.forEach(function(producto){
     nombre.classList.add("text-center")
     nombre.textContent=producto.descripcion
 
-    let costo=document.createElement("h4")
+    let costo=document.createElement("h5")
     costo.classList.add("text-center")
     costo.textContent=producto.precio
 
     let boton=document.createElement("button")
-    boton.classList.add("btn-center")
+    boton.classList.add("btn","btn-center","btn--hover","btn-warning","w-40","d-block","max-auto","mt-4")
+    boton.setAttribute("type","button")
     boton.textContent=producto.boton
 
     tarjeta.appendChild(img)
@@ -48,11 +49,19 @@ productos.forEach(function(producto){
     fila.appendChild(columna)
 }) 
 
-let etiquetaTitulo=document.getElementById("titulo")
-etiquetaTitulo.addEventListener("mouseover",cambiartitulo);
+//rutina para ampliar informacion del producto
+let filaContenedora=document.getElementById("fila")
+filaContenedora.addEventListener("click",function(evento){
+        if(evento.target.classList.contains("btn")){
+            console.log(evento.target.parentElement.querySelector("h4").textContent);
+            console.log(evento.target.parentElement.querySelector("img").src);
+            let modalinfo = new bootstrap.Modal(document.getElementById('modalinfo'))
+            modalinfo.show()
+            let fotoinfo= document.getElementById("fotoInfo")
+            fotoinfo.src=evento.target.parentElement.querySelector("img").src
 
-function cambiartitulo(){
-    let etiquetaTitulo2=document.getElementById("img")
-    etiquetaTitulo2.textContent="Historia"
-}
+            let tituloInfo=document.getElementById("tituloInfo")
+            tituloInfo.textContent=evento.target.parentElement.querySelector("h4").textContent
+        }
+})
 
