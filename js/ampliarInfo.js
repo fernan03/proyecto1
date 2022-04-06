@@ -1,12 +1,12 @@
 //rutina para ampliar informacion del producto
       export function ampliarInformacionProducto(evento){
 
-            let producto=[]
+            let producto={}
             
             //Lleno la informacion del producto
             producto.foto=evento.target.parentElement.querySelector("img").src
-            producto.descripcion.textContent=evento.target.parentElement.querySelector("h4").textContent
-            producto.precio.textContent=evento.target.parentElement.querySelector("h5").textContent
+            producto.descripcion=evento.target.parentElement.querySelector("h4").textContent
+            producto.precio=evento.target.parentElement.querySelector("h5").textContent
 
             let fotoinfo= document.getElementById("fotoInfo")
             fotoinfo.src=evento.target.parentElement.querySelector("img").src
