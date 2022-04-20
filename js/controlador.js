@@ -49,14 +49,17 @@ botonaGregarCarrito.addEventListener("click",function(){
     capsula.classList.remove("invisible")
     capsula.textContent=suma
     modalinfo.hide()
+    subtotal(1)
     
 })
 //rutina para limpiar
 let limpiarCarrito=document.getElementById("botonlimpiar")
 limpiarCarrito.addEventListener("click",function(){
+    subtotal(0)
     capsula.textContent=0
     capsula.classList.add("invisible")
     carrito=[]
+
 
 })
 
@@ -102,4 +105,19 @@ verCarrito.addEventListener("click",function(){
 
     modalcompra.show()
 })
+
+//rutina para hacer subtotal
+let mostrarsubtotal=document.getElementById("mostrarSubtotal")
+function subtotal(validar){
+    let total=0
+    carrito.forEach(function(producto){
+        if(validar==1){
+            total=total+(Number(producto.cantidad)*Number(producto.precio))
+            mostrarsubtotal.textContent=total
+        }else{
+            total=0
+            mostrarsubtotal.textContent=""
+        }
+    })
+}
    

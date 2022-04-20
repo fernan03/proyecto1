@@ -30,6 +30,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="#history">Historia</a></li>
                       <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Creado Por</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Registrarse</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="tienda.html">Tienda Online</a></li>
                     </ul>
@@ -44,6 +45,21 @@
           </nav>
     </header>
     <main>
+      <section>
+        <form>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <button type="submit" class="btn btn-primary w-100" id="botonregistro">Registro</button>
+        </form>
+      </section>
         <img src="img/fondo.jpg" alt="fondobanner" class="w-100 img-fluid">
         <section>
             <div class="conteiner mt-5">
@@ -60,7 +76,7 @@
                 </div>
             </div>
         </section>
-
+      
     </main>
     <section>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -189,6 +205,8 @@
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/eventos.js"></script>
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/registro.js" type="module"></script>
     
 </body>
 </html>
