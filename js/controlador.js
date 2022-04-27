@@ -50,6 +50,7 @@ botonaGregarCarrito.addEventListener("click",function(){
     capsula.textContent=suma
     modalinfo.hide()
     subtotal(1)
+    reiniciar()
     
 })
 //rutina para limpiar
@@ -119,5 +120,10 @@ function subtotal(validar){
             mostrarsubtotal.textContent=""
         }
     })
+}
+
+function reiniciar(){
+    let cantidadProducto = document.getElementById("cantidadProducto")
+    cantidadProducto.value="1"
 }
    

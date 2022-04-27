@@ -28,6 +28,16 @@
   border: black;
   border-style: solid;
 }
+
+.img-formulario{
+  height: 100px;
+  border: black;
+  border-style: solid;
+}
+
+.textform{
+  margin-left:10px;
+}
 p,h2{
   color: #fff;
 }
