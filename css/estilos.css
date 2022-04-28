@@ -38,7 +38,15 @@
 .textform{
   margin-left:10px;
 }
-p,h2{
+h2{
+  color: #fff;
+}
+
+.conteiner-main{
+  color: #fff;
+}
+
+.section-history{
   color: #fff;
 }
 
@@ -109,6 +117,7 @@ p,h2{
   
 }
 .p-footer{
+  color: #fff;
   margin-top: 15px;
   text-align: center;
 }
