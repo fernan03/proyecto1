@@ -117,9 +117,10 @@ verCarrito.addEventListener("click",function(){
 })
 
 //rutina para hacer total
+let total=0
 let mostrarTotal=document.getElementById("mostrarTotal")
 function Total(validar){
-    let total=0
+    
     carrito.forEach(function(producto){
         if(validar==1){
             total=total+producto.subtotal
@@ -137,4 +138,12 @@ function reiniciar(){
     let cantidadProducto = document.getElementById("cantidadProducto")
     cantidadProducto.value="1"
 }
+
+let botonDolar = document.getElementById("convertidor")
+botonDolar.addEventListener("click",function (){
+    let pesos = total
+    let dolares = pesos/3955
+    mostrarTotal.textContent="Total en Dolares: "+dolares.toFixed(2)
+})
+   
    
