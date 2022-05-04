@@ -89,19 +89,19 @@ verCarrito.addEventListener("click",function(){
         imagen.classList.add("img-fluig","w-100")
 
         let nombre=document.createElement("p")
-        nombre.textContent=producto.descripcion
+        nombre.textContent="Producto: "+producto.descripcion
         nombre.classList.add("text-center")
 
         let precio=document.createElement("p")
-        precio.textContent=producto.precio
+        precio.textContent="Precio: "+producto.precio
         precio.classList.add("text-center")
 
         let cantidad=document.createElement("p")
-        cantidad.textContent=producto.cantidad
+        cantidad.textContent="Cantidad: "+producto.cantidad
         cantidad.classList.add("text-center")
 
         let subtotalProducto = document.createElement("h5")
-        subtotalProducto.textContent="subtotal: "+ producto.subtotal
+        subtotalProducto.textContent="subtotal: $"+ producto.subtotal
         subtotalProducto.classList.add("text-center")
 
         columna1.appendChild(imagen)
@@ -124,7 +124,7 @@ function Total(validar){
     carrito.forEach(function(producto){
         if(validar==1){
             total=total+producto.subtotal
-            mostrarTotal.textContent="Total: "+total
+            mostrarTotal.textContent="Total: $"+total
 
         }else{
             total=0
@@ -143,7 +143,9 @@ let botonDolar = document.getElementById("convertidor")
 botonDolar.addEventListener("click",function (){
     let pesos = total
     let dolares = pesos/3955
-    mostrarTotal.textContent="Total en Dolares: "+dolares.toFixed(2)
+    mostrarTotal.textContent="Total en Dolares: $"+dolares.toFixed(2)
 })
+
+
    
    
